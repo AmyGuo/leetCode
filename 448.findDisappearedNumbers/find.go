@@ -32,6 +32,28 @@ func FindDisappearedNumbers(nums []int) []int {
 }
 
 //鸽巢理论：
-func FindDisappearedNumbers2(nums []int) []int {
+//遍历输入数组的每个元素一次。
+//我们将把 |nums[i]|-1 索引位置的元素标记为负数。即 nums[|nums[i] |- 1] ×−1 。
+//然后遍历数组，若当前数组元素 nums[i] 为负数，说明我们在数组中存在数字 i+1。
 
+func FindDisappearedNumbers2(nums []int) []int {
+	for i := 0; i < len(nums); i++ {
+		newIndex := 0
+		if nums[i] > 0 {
+			newIndex = nums[i] - 1
+		} else {
+			newIndex = -nums[i] - 1
+		}
+		if nums[newIndex] > 0 {
+			nums[newIndex] *= -1
+		}
+	}
+
+	ret := make([]int, 0)
+	for i := 1; i <= len(nums); i++ {
+		if nums[i-1] > 0 {
+			ret = append(ret, i)
+		}
+	}
+	return ret
 }

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95194f9b-f10a-42e3-9f49-2d8ee1576896" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/283.moveZeroes/moveZeroes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find.go" beforeDir="false" afterPath="$PROJECT_DIR$/448.findDisappearedNumbers/find.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs.go" beforeDir="false" afterPath="$PROJECT_DIR$/70.climbStairs/climbStairs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/70.climbStairs/climbStairs_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,31 +20,84 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.go">
+        <entry file="file://$PROJECT_DIR$/70.climbStairs/climbStairs.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/btree/btree.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="594">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btree/btree_test.go">
+        <entry file="file://$PROJECT_DIR$/101.symmetric/symmetric.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="-1404">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/104.maxDepth/maxDepth.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-972" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/136.singleNumber/singleNumber.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/206.reverseList/reverseList.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-424" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/437.pathSum/pathSum.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2754" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/448.findDisappearedNumbers/find.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/283.moveZeroes/moveZeroes.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding>
-                <element signature="e#15#43#0" expanded="true" />
+                <element signature="e#24#52#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -63,6 +122,12 @@
         <option value="$PROJECT_DIR$/b-tree.go/btree.go" />
         <option value="$PROJECT_DIR$/btree/btree_test.go" />
         <option value="$PROJECT_DIR$/btree/btree.go" />
+        <option value="$PROJECT_DIR$/70.climbStairs/climbStairs_test.go" />
+        <option value="$PROJECT_DIR$/70.climbStairs/climbStairs.go" />
+        <option value="$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go" />
+        <option value="$PROJECT_DIR$/448.findDisappearedNumbers/find.go" />
+        <option value="$PROJECT_DIR$/283.moveZeroes/moveZeroes.go" />
+        <option value="$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go" />
       </list>
     </option>
   </component>
@@ -72,11 +137,25 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="algo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\goWork\src\algo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -84,16 +163,10 @@
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
             <path>
-              <item name="algo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\goWork\src\algo" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="283.moveZeroes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -111,6 +184,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -124,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build test.go">
+  <component name="RunManager" selected="Go Test.TestFindDisappearedNumbers in algo/448.findDisappearedNumbers">
     <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="algo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -133,14 +207,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="TestBTree in btree_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestClimbStairs in algo/70.climbStairs" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algo" />
-      <working_directory value="$PROJECT_DIR$/btree" />
+      <working_directory value="$PROJECT_DIR$/70.climbStairs" />
       <framework value="gotest" />
-      <kind value="FILE" />
+      <kind value="PACKAGE" />
+      <package value="algo/70.climbStairs" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/btree/btree_test.go" />
-      <pattern value="^TestBTree$" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestClimbStairs$" />
       <method v="2" />
     </configuration>
     <configuration name="TestCreateNode in btree_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -151,6 +226,17 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/btree/btree_test.go" />
       <pattern value="^TestCreateNode$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algo" />
+      <working_directory value="$PROJECT_DIR$/448.findDisappearedNumbers" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algo/448.findDisappearedNumbers" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestFindDisappearedNumbers$" />
       <method v="2" />
     </configuration>
     <configuration name="btree_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -164,28 +250,56 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" />
+        <item itemvalue="Go Test.TestClimbStairs in algo/70.climbStairs" />
         <item itemvalue="Go Build.go build test.go" />
         <item itemvalue="Go Test.TestCreateNode in btree_test.go" />
         <item itemvalue="Go Test.btree_test.go" />
-        <item itemvalue="Go Test.TestBTree in btree_test.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCreateNode_in_btree_test_go - 2020.01.02 at 18h 27m 23s.xml">
-      <configuration name="TestCreateNode in btree_test.go" configurationId="GoTestRunConfiguration" />
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 07m 55s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 08m 42s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 15m 50s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 16m 06s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 17m 26s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 17m 46s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 18m 21s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 19m 18s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 20m 25s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindDisappearedNumbers_in_algo_448_findDisappearedNumbers - 2020.01.15 at 18h 21m 22s.xml">
+      <configuration name="TestFindDisappearedNumbers in algo/448.findDisappearedNumbers" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16359697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.25921908" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -194,7 +308,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.26030368" />
       <window_info anchor="bottom" id="调试" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -228,6 +342,20 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/b-tree.go/btree.go" />
+    <entry file="file://$PROJECT_DIR$/test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btree/btree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/btree/btree_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -238,17 +366,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.go">
+    <entry file="file://$PROJECT_DIR$/70.climbStairs/climbStairs_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="216">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btree/btree.go">
+    <entry file="file://$PROJECT_DIR$/70.climbStairs/climbStairs.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="594">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/101.symmetric/symmetric.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1404">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/104.maxDepth/maxDepth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/136.singleNumber/singleNumber.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/206.reverseList/reverseList.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-424" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/437.pathSum/pathSum.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2754" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/448.findDisappearedNumbers/find.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#24#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/283.moveZeroes/moveZeroes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

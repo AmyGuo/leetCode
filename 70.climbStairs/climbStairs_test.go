@@ -6,5 +6,7 @@ import (
 )
 
 func TestClimbStairs(t *testing.T) {
-	fmt.Println(ClimbStairs(3))
+	fmt.Println(ClimbStairs(4))
+	fmt.Println(ClimbStairs2(4))
+	fmt.Println(ClimbStairs3(4))
 }
