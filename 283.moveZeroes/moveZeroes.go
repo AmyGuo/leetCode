@@ -12,5 +12,18 @@ package _83_moveZeroes
 //尽量减少操作次数。
 
 func MoveZeroes(nums []int) {
-
+	l := len(nums)
+	if l == 0 {
+		return
+	}
+	index := 0
+	for i := 0; i < l; i++ {
+		if nums[i] != 0 {
+			nums[index] = nums[i]
+			index++
+		}
+	}
+	for ; index < l; index++ {
+		nums[index] = 0
+	}
 }
