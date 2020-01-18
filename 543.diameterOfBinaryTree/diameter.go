@@ -23,27 +23,6 @@ type TreeNode struct {
 
 //分析：这道题看似求直径，其实是求深度的变形。深度 = max(左子数深度，右子树深度) +1
 
-//class Solution:
-//
-//def __init__(self):
-//self.max = 0
-//
-//def diameterOfBinaryTree(self, root: TreeNode) -> int:
-//self.depth(root)
-//
-//return self.max
-//
-//def depth(self, root):
-//if not root:
-//return 0
-//l = self.depth(root.left)
-//r = self.depth(root.right)
-//'''每个结点都要去判断左子树+右子树的高度是否大于self.max，更新最大值'''
-//self.max = max(self.max, l+r)
-//
-//# 返回的是高度
-//return max(l, r) + 1
-
 func DiameterOfBinaryTree(root *TreeNode) int {
 	max := 0
 	depth(root, &max)

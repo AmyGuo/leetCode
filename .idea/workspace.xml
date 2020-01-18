@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95194f9b-f10a-42e3-9f49-2d8ee1576896" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/226.invertTree/invertTree.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/226.invertTree/invertTree_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/538.convertBST/conver_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/538.convertBST/convert.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/617.mergeTrees/merge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/617.mergeTrees/merge_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/234.isPalindrome/isPalindrome.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/234.isPalindrome/isPalindrome_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go" beforeDir="false" afterPath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/btree/btree.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="658">
-              <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+              <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -63,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            <state relative-caret-position="481">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -73,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/543.diameterOfBinaryTree/diameter_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="508">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#34#62#0" expanded="true" />
               </folding>
@@ -94,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/538.convertBST/conver_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
               </folding>
@@ -211,11 +199,6 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="543.diameterOfBinaryTree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
@@ -354,13 +337,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="缩略图" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.16052061" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.16052061" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -703,7 +686,7 @@
     <entry file="file://$PROJECT_DIR$/538.convertBST/conver_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="e#24#52#0" expanded="true" />
           </folding>
@@ -720,14 +703,14 @@
     <entry file="file://$PROJECT_DIR$/btree/btree.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
-          <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/543.diameterOfBinaryTree/diameter_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#34#62#0" expanded="true" />
           </folding>
@@ -736,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="481">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
