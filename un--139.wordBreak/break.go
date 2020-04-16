@@ -26,3 +26,30 @@ package _39_wordBreak
 func WordBreak(s string, wordDict []string) bool {
 	return true
 }
+
+func wordBreak(s string, wordDict []string) bool {
+	return bword([]byte(s),wordDict)
+}
+
+func bword(s []byte, keys []string) bool {
+	dp := make([]bool, len(s))
+	for i := 0; i < len(s); i++ {
+		for _, key := range keys {
+			if i < len(key) - 1 {
+				continue
+			}
+			if (i == len(key) - 1 || dp[i-len(key)]) && string(s[i-len(key)+1:i+1]) == key {
+				dp[i] = true
+			}
+		}
+	}
+
+	return dp[len(s)-1]
+}
+//
+//重点思考状态转移方程：
+//i为字符串第i位， key为其中一个关键字
+//f(i) = f(i - len(key)) 且 key == s[i-len(key)+1:i+1]
+//
+//用一个与s等长的数组dp保存状态即可，如果f(i)成立dp[i] == true
+
