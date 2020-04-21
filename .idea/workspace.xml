@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95194f9b-f10a-42e3-9f49-2d8ee1576896" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/287.findDuplicate/find.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/287.findDuplicate/find_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/338.countBits/count.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/338.countBits/count_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/560.subarraySum/sum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/560.subarraySum/sum_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/494.findTargetSumWays/find.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/494.findTargetSumWays/find_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,27 +15,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15.threeSum/threeSum.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/un--15.threeSum/threeSum.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/287.findDuplicate/find.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="1188">
               <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
             </state>
           </provider>
@@ -48,17 +26,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/338.countBits/count.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
+            <state relative-caret-position="1377">
               <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/560.subarraySum/sum.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            <state relative-caret-position="576">
+              <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/494.findTargetSumWays/find.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/494.findTargetSumWays/find_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -67,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/560.subarraySum/sum_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -117,6 +113,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&amp;</find>
+    </findStrings>
+    <dirStrings>
+      <dir>E:\goWork\src\algo</dir>
+    </dirStrings>
+  </component>
   <component name="GOROOT" path="E:\go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,6 +140,8 @@
         <option value="$PROJECT_DIR$/338.countBits/count.go" />
         <option value="$PROJECT_DIR$/560.subarraySum/sum_test.go" />
         <option value="$PROJECT_DIR$/560.subarraySum/sum.go" />
+        <option value="$PROJECT_DIR$/494.findTargetSumWays/find_test.go" />
+        <option value="$PROJECT_DIR$/494.findTargetSumWays/find.go" />
       </list>
     </option>
   </component>
@@ -154,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,18 +171,12 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="560.subarraySum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="un--15.threeSum" type="462c0819:PsiDirectoryNode" />
+              <item name="494.findTargetSumWays" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestSubarraySum in algo/560.subarraySum">
+  <component name="RunManager" selected="Go Test.TestFindTargetSumWays in algo/494.findTargetSumWays">
     <configuration name="TestCountBits in algo/338.countBits" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetCode" />
       <working_directory value="$PROJECT_DIR$/338.countBits" />
@@ -225,15 +226,15 @@
       <pattern value="^TestFindDuplicate$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSingleNumber in algo/260.singleNum3" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFindTargetSumWays in algo/494.findTargetSumWays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetCode" />
-      <working_directory value="$PROJECT_DIR$/260.singleNum3" />
+      <working_directory value="$PROJECT_DIR$/494.findTargetSumWays" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="algo/260.singleNum3" />
+      <package value="algo/494.findTargetSumWays" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSingleNumber$" />
+      <pattern value="^TestFindTargetSumWays$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSubarraySum in algo/560.subarraySum" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -260,21 +261,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestFindTargetSumWays in algo/494.findTargetSumWays" />
         <item itemvalue="Go Test.TestSubarraySum in algo/560.subarraySum" />
         <item itemvalue="Go Test.TestCountBits in algo/338.countBits" />
         <item itemvalue="Go Test.TestFindDuplicate in algo/287.findDuplicate" />
         <item itemvalue="Go Test.TestThreeSum in algo/15.threeSum" />
-        <item itemvalue="Go Test.TestSingleNumber in algo/260.singleNum3" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSubarraySum_in_algo_560_subarraySum - 2020.04.17 at 17h 51m 19s.xml">
-      <configuration name="TestSubarraySum in algo/560.subarraySum" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestSubarraySum_in_algo_560_subarraySum - 2020.04.17 at 17h 51m 49s.xml">
-      <configuration name="TestSubarraySum in algo/560.subarraySum" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestSubarraySum_in_algo_560_subarraySum - 2020.04.17 at 17h 52m 40s.xml">
       <configuration name="TestSubarraySum in algo/560.subarraySum" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -299,12 +294,18 @@
     <history-entry file="TestSubarraySum_in_algo_560_subarraySum - 2020.04.17 at 18h 23m 00s.xml">
       <configuration name="TestSubarraySum in algo/560.subarraySum" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestFindTargetSumWays_in_algo_494_findTargetSumWays - 2020.04.21 at 18h 15m 10s.xml">
+      <configuration name="TestFindTargetSumWays in algo/494.findTargetSumWays" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFindTargetSumWays_in_algo_494_findTargetSumWays - 2020.04.21 at 18h 27m 09s.xml">
+      <configuration name="TestFindTargetSumWays in algo/494.findTargetSumWays" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,13 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/137.singleNum2/single_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15.threeSum/threeSum.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -440,24 +434,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/287.findDuplicate/find_test.go">
+    <entry file="file://$PROJECT_DIR$/un--15.threeSum/threeSum.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="351">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/287.findDuplicate/find.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="1188">
           <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/338.countBits/count_test.go">
+    <entry file="file://$PROJECT_DIR$/338.countBits/count.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="1377">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/560.subarraySum/sum_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -468,31 +469,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/338.countBits/count.go">
+    <entry file="file://$PROJECT_DIR$/338.countBits/count_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        <state relative-caret-position="162">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/un--15.threeSum/threeSum.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/560.subarraySum/sum_test.go">
+    <entry file="file://$PROJECT_DIR$/287.findDuplicate/find_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/137.singleNum2/single_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/560.subarraySum/sum.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        <state relative-caret-position="576">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/494.findTargetSumWays/find_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/494.findTargetSumWays/find.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
