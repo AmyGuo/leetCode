@@ -2,13 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95194f9b-f10a-42e3-9f49-2d8ee1576896" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/438.findAnagrams/find.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/438.findAnagrams/find_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/76.minWindos/min.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/76.minWindos/min_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.twoSum/twoSum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.twoSum/twoSum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/101.symmetric/symmentric_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/101.symmetric/symmetric.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/104.maxDepth/maxDepth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/104.maxDepth/maxDepth_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/121.maxProfilt/maxProfilt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/121.maxProfilt/maxProfit_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/136.singleNumber/singleNumber.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/136.singleNumber/singleNumber_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/137.singleNum2/single.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/137.singleNum2/single_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/141.hasCycle/hasCycle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/141.hasCycle/hasCycle_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.threeSum/threeSum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.threeSum/threeSum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/155.minStack/minStack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/155.minStack/minStack_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/169.majorityElement/majority.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/169.majorityElement/majority_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/198.rob/rob.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/198.rob/rob_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20.isValid/isValid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20.isValid/isValid_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/206.reverseList/reverseList.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/206.reverseList/reverseList_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/21.mergeTwoLists/merge.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/21.mergeTwoLists/merge_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/226.invertTree/invertTree.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/226.invertTree/invertTree_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/260.singleNum3/single.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/260.singleNum3/single_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/283.moveZeroes/moveZeroes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/287.findDuplicate/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/287.findDuplicate/find_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/338.countBits/count.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/338.countBits/count_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/437.pathSum/pathSum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/437.pathSum/pathSum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/438.findAnagrams/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/438.findAnagrams/find_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/461.hammingDistance/hammingDistance.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/461.hammingDistance/hammingDistance_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/53.maxSubArray/maxSubArray.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/53.maxSubArray/maxSubArray_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/538.convertBST/conver_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/538.convertBST/convert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/560.subarraySum/sum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/560.subarraySum/sum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/581.findUnsortedSubarray/findArray.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/581.findUnsortedSubarray/findArray_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/617.mergeTrees/merge.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/617.mergeTrees/merge_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/709.toLowerCase/conver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/709.toLowerCase/convert_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/76.minWindos/min.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/76.minWindos/min_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/784.letterCasePermutation/permutation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/784.letterCasePermutation/permutation_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/79.exist/exist.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/79.exist/exist_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--139.wordBreak/break.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--139.wordBreak/break_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--15.threeSum/threeSum.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--15.threeSum/threeSum_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--494.findTargetSumWays/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/un--494.findTargetSumWays/find_test.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,56 +92,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/438.findAnagrams/find.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1261">
-              <caret line="98" column="9" lean-forward="true" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.lengthOfLongestSubstring/find.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.lengthOfLongestSubstring/find_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/438.findAnagrams/find_test.go">
+        <entry file="file://$PROJECT_DIR$/btree/btree.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/76.minWindos/min.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/76.minWindos/min_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="351">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -146,7 +175,7 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="438.findAnagrams" type="462c0819:PsiDirectoryNode" />
+              <item name="btree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,6 +564,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btree/btree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
