@@ -2,87 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95194f9b-f10a-42e3-9f49-2d8ee1576896" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/Tree/637.averageOfLevels/average.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tree/637.averageOfLevels/average_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.twoSum/twoSum.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.twoSum/twoSum_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/101.symmetric/symmentric_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/101.symmetric/symmetric.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/104.maxDepth/maxDepth.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/104.maxDepth/maxDepth_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/121.maxProfilt/maxProfilt.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/121.maxProfilt/maxProfit_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/136.singleNumber/singleNumber.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/136.singleNumber/singleNumber_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/137.singleNum2/single.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/137.singleNum2/single_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/141.hasCycle/hasCycle.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/141.hasCycle/hasCycle_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/15.threeSum/threeSum.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/15.threeSum/threeSum_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/155.minStack/minStack.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/155.minStack/minStack_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/160.getIntersectionNode/getIntersectionNode_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/169.majorityElement/majority.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/169.majorityElement/majority_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/198.rob/rob.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/198.rob/rob_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20.isValid/isValid.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20.isValid/isValid_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/206.reverseList/reverseList.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/206.reverseList/reverseList_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/21.mergeTwoLists/merge.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/21.mergeTwoLists/merge_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/226.invertTree/invertTree.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/226.invertTree/invertTree_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/234.isPalindrome/isPalindrome_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/260.singleNum3/single.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/260.singleNum3/single_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/283.moveZeroes/moveZeroes.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/283.moveZeroes/moveZeroes_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/287.findDuplicate/find.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/287.findDuplicate/find_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.lengthOfLongestSubstring/find_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/338.countBits/count.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/338.countBits/count_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/437.pathSum/pathSum.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/437.pathSum/pathSum_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/438.findAnagrams/find.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/438.findAnagrams/find_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/448.findDisappearedNumbers/find_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/461.hammingDistance/hammingDistance.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/461.hammingDistance/hammingDistance_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/53.maxSubArray/maxSubArray.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/53.maxSubArray/maxSubArray_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/538.convertBST/conver_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/538.convertBST/convert.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/543.diameterOfBinaryTree/diameter_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/560.subarraySum/sum.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/560.subarraySum/sum_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/581.findUnsortedSubarray/findArray.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/581.findUnsortedSubarray/findArray_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/617.mergeTrees/merge.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/617.mergeTrees/merge_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/70.climbStairs/climbStairs_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/709.toLowerCase/conver.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/709.toLowerCase/convert_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/76.minWindos/min.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/76.minWindos/min_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/784.letterCasePermutation/permutation.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/784.letterCasePermutation/permutation_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/79.exist/exist.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/79.exist/exist_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--139.wordBreak/break.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--139.wordBreak/break_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--15.threeSum/threeSum.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--15.threeSum/threeSum_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--494.findTargetSumWays/find.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/un--494.findTargetSumWays/find_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tree/btree/btree_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Tree/btree/btree_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,11 +15,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/btree/btree.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/637.averageOfLevels/average.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/btree/btree.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1300">
+              <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tree/btree/btree_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/637.averageOfLevels/average_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -147,12 +97,15 @@
         <option value="$PROJECT_DIR$/438.findAnagrams/find_test.go" />
         <option value="$PROJECT_DIR$/3.lengthOfLongestSubstring/find_test.go" />
         <option value="$PROJECT_DIR$/3.lengthOfLongestSubstring/find.go" />
+        <option value="$PROJECT_DIR$/Tree/637.averageOfLevels/average_test.go" />
+        <option value="$PROJECT_DIR$/Tree/637.averageOfLevels/average.go" />
+        <option value="$PROJECT_DIR$/Tree/btree/btree_test.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="161" />
-    <option name="y" value="221" />
+    <option name="x" value="237" />
+    <option name="y" value="354" />
     <option name="width" value="1932" />
     <option name="height" value="1047" />
   </component>
@@ -175,6 +128,18 @@
             <path>
               <item name="algo" type="b2602c69:ProjectViewProjectNode" />
               <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
+              <item name="637.averageOfLevels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algo" type="462c0819:PsiDirectoryNode" />
+              <item name="Tree" type="462c0819:PsiDirectoryNode" />
               <item name="btree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -208,7 +173,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring">
+  <component name="RunManager" selected="Go Test.Test in algo/Tree/637.averageOfLevels">
+    <configuration name="Test in algo/Tree/637.averageOfLevels" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetCode" />
+      <working_directory value="$PROJECT_DIR$/Tree/637.averageOfLevels" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algo/Tree/637.averageOfLevels" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCreateNode in algo/Tree/btree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetCode" />
+      <working_directory value="$PROJECT_DIR$/Tree/btree" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="algo/Tree/btree" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCreateNode$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestFindAnagrams in algo/438.findAnagrams" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="leetCode" />
       <working_directory value="$PROJECT_DIR$/438.findAnagrams" />
@@ -218,17 +205,6 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestFindAnagrams$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestFindTargetSumWays in algo/494.findTargetSumWays" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leetCode" />
-      <working_directory value="$PROJECT_DIR$/494.findTargetSumWays" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="algo/494.findTargetSumWays" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestFindTargetSumWays$" />
       <method v="2" />
     </configuration>
     <configuration name="TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -253,49 +229,17 @@
       <pattern value="^TestMinWindow$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSubarraySum in algo/560.subarraySum" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leetCode" />
-      <working_directory value="$PROJECT_DIR$/560.subarraySum" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="algo/560.subarraySum" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSubarraySum$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test in algo/Tree/637.averageOfLevels" />
+        <item itemvalue="Go Test.TestCreateNode in algo/Tree/btree" />
         <item itemvalue="Go Test.TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring" />
         <item itemvalue="Go Test.TestFindAnagrams in algo/438.findAnagrams" />
         <item itemvalue="Go Test.TestMinWindow in algo/76.minWindos" />
-        <item itemvalue="Go Test.TestFindTargetSumWays in algo/494.findTargetSumWays" />
-        <item itemvalue="Go Test.TestSubarraySum in algo/560.subarraySum" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestMinWindow_in_algo_76_minWindos - 2020.04.22 at 16h 17m 56s.xml">
-      <configuration name="TestMinWindow in algo/76.minWindos" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestMinWindow_in_algo_76_minWindos - 2020.04.22 at 16h 20m 35s.xml">
-      <configuration name="TestMinWindow in algo/76.minWindos" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestMinWindow_in_algo_76_minWindos - 2020.04.22 at 16h 21m 41s.xml">
-      <configuration name="TestMinWindow in algo/76.minWindos" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestMinWindow_in_algo_76_minWindos - 2020.04.22 at 16h 22m 41s.xml">
-      <configuration name="TestMinWindow in algo/76.minWindos" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestMinWindow_in_algo_76_minWindos - 2020.04.22 at 16h 25m 07s.xml">
-      <configuration name="TestMinWindow in algo/76.minWindos" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFindAnagrams_in_algo_438_findAnagrams - 2020.04.22 at 16h 43m 35s.xml">
-      <configuration name="TestFindAnagrams in algo/438.findAnagrams" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLengthOfLongestSubstring_in_algo_3_lengthOfLongestSubstring - 2020.04.22 at 16h 54m 41s.xml">
-      <configuration name="TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestLengthOfLongestSubstring_in_algo_3_lengthOfLongestSubstring - 2020.04.22 at 16h 55m 25s.xml">
       <configuration name="TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -304,6 +248,27 @@
     </history-entry>
     <history-entry file="TestLengthOfLongestSubstring_in_algo_3_lengthOfLongestSubstring - 2020.04.22 at 16h 58m 06s.xml">
       <configuration name="TestLengthOfLongestSubstring in algo/3.lengthOfLongestSubstring" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCreateNode_in_algo_Tree_btree - 2020.04.22 at 17h 54m 49s.xml">
+      <configuration name="TestCreateNode in algo/Tree/btree" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCreateNode_in_algo_Tree_btree - 2020.04.22 at 17h 55m 54s.xml">
+      <configuration name="TestCreateNode in algo/Tree/btree" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_algo_Tree_637_averageOfLevels - 2020.04.22 at 18h 01m 29s.xml">
+      <configuration name="Test in algo/Tree/637.averageOfLevels" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_algo_Tree_637_averageOfLevels - 2020.04.22 at 18h 01m 56s.xml">
+      <configuration name="Test in algo/Tree/637.averageOfLevels" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_algo_Tree_637_averageOfLevels - 2020.04.22 at 18h 03m 45s.xml">
+      <configuration name="Test in algo/Tree/637.averageOfLevels" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_algo_Tree_637_averageOfLevels - 2020.04.22 at 18h 26m 04s.xml">
+      <configuration name="Test in algo/Tree/637.averageOfLevels" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_in_algo_Tree_637_averageOfLevels - 2020.04.22 at 18h 26m 44s.xml">
+      <configuration name="Test in algo/Tree/637.averageOfLevels" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -571,6 +536,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/637.averageOfLevels/average_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/btree/btree.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/637.averageOfLevels/average.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/btree/btree_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>

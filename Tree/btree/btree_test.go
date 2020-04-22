@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestCreateNode(t *testing.T)  {
+func TestCreateNode(t *testing.T) {
 	root := Node{Value: 3}
 	root.Left = &Node{}
 	root.Left.SetValue(0)
