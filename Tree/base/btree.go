@@ -1,4 +1,4 @@
-package btree
+package base
 
 import (
 	"fmt"
@@ -121,4 +121,3 @@ func (node *Node) LayersByQueue() int {
 func CreateNode(v int) *Node {
 	return &Node{Value: v}
 }
-
