@@ -64,3 +64,29 @@ func getLayer(node *TreeNode) int {
 		return right + 1
 	}
 }
+
+func IsBalanced2(root *TreeNode) bool {
+	return getDepth(root) != -1
+}
+
+func getDepth(node *TreeNode) int {
+	if node == nil {
+		return 0
+	}
+	left, right := getDepth(node.Left), getDepth(node.Right)
+	if left == -1 || right == -1 {
+		return -1
+	}
+	var depth, max int
+	if left > right {
+		depth = left - right
+		max = left
+	} else {
+		depth = right - left
+		max = right
+	}
+	if depth > 1 {
+		return -1
+	}
+	return max + 1
+}

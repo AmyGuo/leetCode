@@ -31,5 +31,26 @@ type TreeNode struct {
 }
 
 func FindTile(root *TreeNode) int {
+	ret := 0
+	traverse(root, &ret)
+	return ret
+}
 
+func traverse(node *TreeNode, ret *int) int {
+	if node == nil {
+		return 0
+	}
+
+	left := traverse(node.Left, ret)
+	right := traverse(node.Right, ret)
+	*ret += abs(left, right)
+	return left + right + node.Val
+}
+
+func abs(a, b int) int {
+	if a > b {
+		return a - b
+	} else {
+		return b - a
+	}
 }
