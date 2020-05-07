@@ -71,6 +71,23 @@ func dfs(node *TreeNode, nums *[]int) {
 }
 
 //修改原来的树
+//和方法一类似，我们在树上进行中序遍历，但会将树中的节点之间重新连接而不使用额外的空间。具体地，当我们遍历到一个节点时，把它的左孩子设为空，并将其本身作为上一个遍历到的节点的右孩子。
+
+//力扣的测试不通过，why?
 func IncreasingBST2(root *TreeNode) *TreeNode {
-	return nil
+	prev := new(TreeNode)
+	head := prev
+	inOrder(root, prev)
+	return head.Right
+}
+
+func inOrder(node, cur *TreeNode) {
+	if node == nil {
+		return
+	}
+	inOrder(node.Left, cur)
+	node.Left = nil
+	cur.Right = node
+	cur = node
+	inOrder(node.Right, cur)
 }
