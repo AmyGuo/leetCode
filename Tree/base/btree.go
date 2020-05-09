@@ -6,16 +6,16 @@ import (
 
 //二叉树的遍历
 
-type Node struct {
+type TreeNode struct {
 	Value       int
-	Left, Right *Node
+	Left, Right *TreeNode
 }
 
-func (node *Node) Print() {
+func (node *TreeNode) Print() {
 	fmt.Print(node.Value, " ")
 }
 
-func (node *Node) SetValue(v int) {
+func (node *TreeNode) SetValue(v int) {
 	if node == nil {
 		fmt.Println("setting value to nil.node ignored.")
 		return
@@ -24,7 +24,7 @@ func (node *Node) SetValue(v int) {
 }
 
 //前序遍历
-func (node *Node) PreOrder() {
+func (node *TreeNode) PreOrder() {
 	if node == nil {
 		return
 	}
@@ -34,7 +34,7 @@ func (node *Node) PreOrder() {
 }
 
 //中序遍历
-func (node *Node) MiddleOrder() {
+func (node *TreeNode) MiddleOrder() {
 	if node == nil {
 		return
 	}
@@ -44,7 +44,7 @@ func (node *Node) MiddleOrder() {
 }
 
 //后序遍历
-func (node *Node) PostOrder() {
+func (node *TreeNode) PostOrder() {
 	if node == nil {
 		return
 	}
@@ -54,21 +54,21 @@ func (node *Node) PostOrder() {
 }
 
 //层次遍历(广度优先遍历)
-func (node *Node) BreadthFirstSearch() {
+func (node *TreeNode) BreadthFirstSearch() {
 	if node == nil {
 		return
 	}
 	result := []int{}
-	nodes := []*Node{node}
+	nodes := []*TreeNode{node}
 	for len(nodes) > 0 {
-		curNode := nodes[0]
+		curTreeNode := nodes[0]
 		nodes = nodes[1:]
-		result = append(result, curNode.Value)
-		if curNode.Left != nil {
-			nodes = append(nodes, curNode.Left)
+		result = append(result, curTreeNode.Value)
+		if curTreeNode.Left != nil {
+			nodes = append(nodes, curTreeNode.Left)
 		}
-		if curNode.Right != nil {
-			nodes = append(nodes, curNode.Right)
+		if curTreeNode.Right != nil {
+			nodes = append(nodes, curTreeNode.Right)
 		}
 	}
 	for _, v := range result {
@@ -78,7 +78,7 @@ func (node *Node) BreadthFirstSearch() {
 
 //层数(递归实现)
 //对任意一个子树的根节点来说，它的深度=左右子树深度的最大值+1
-func (node *Node) Layers() int {
+func (node *TreeNode) Layers() int {
 	if node == nil {
 		return 0
 	}
@@ -93,31 +93,59 @@ func (node *Node) Layers() int {
 
 //层数(非递归实现)
 //借助队列，在进行按层遍历时，记录遍历的层数即可
-func (node *Node) LayersByQueue() int {
+func (node *TreeNode) LayersByQueue() int {
 	if node == nil {
 		return 0
 	}
 	layers := 0
-	nodes := []*Node{node}
+	nodes := []*TreeNode{node}
 	for len(nodes) > 0 {
 		layers++
 		size := len(nodes) //每层的节点数
 		count := 0
 		for count < size {
 			count++
-			curNode := nodes[0]
+			curTreeNode := nodes[0]
 			nodes = nodes[1:]
-			if curNode.Left != nil {
-				nodes = append(nodes, curNode.Left)
+			if curTreeNode.Left != nil {
+				nodes = append(nodes, curTreeNode.Left)
 			}
-			if curNode.Right != nil {
-				nodes = append(nodes, curNode.Right)
+			if curTreeNode.Right != nil {
+				nodes = append(nodes, curTreeNode.Right)
 			}
 		}
 	}
 	return layers
 }
 
-func CreateNode(v int) *Node {
-	return &Node{Value: v}
+func CreateTreeNode(v int) *TreeNode {
+	return &TreeNode{Value: v}
+}
+
+//根据输入的数据构建二叉树
+func BuildTreeNode(nums []interface{}) *TreeNode {
+	if len(nums) == 0 {
+		return nil
+	}
+
+	ret := new(TreeNode)
+	build(ret, nums, 0)
+	return ret
+}
+
+func build(tree *TreeNode, nums []interface{}, index int) {
+	if index > len(nums)-1 {
+		return
+	}
+
+	if val, ok := nums[index].(int); ok {
+		tree.Value = val
+		tree.Left = new(TreeNode)
+		tree.Right = new(TreeNode)
+		build(tree.Left, nums, 2*index+1)
+		build(tree.Right, nums, 2*index+2)
+	} else {
+		tree.Left = nil
+		tree.Right = nil
+	}
 }

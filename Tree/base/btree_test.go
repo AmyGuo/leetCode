@@ -5,13 +5,13 @@ import (
 	"testing"
 )
 
-func TestCreateNode(t *testing.T) {
-	root := Node{Value: 3}
-	root.Left = &Node{}
+func TestCreateTreeNode(t *testing.T) {
+	root := TreeNode{Value: 3}
+	root.Left = &TreeNode{}
 	root.Left.SetValue(0)
-	root.Left.Right = CreateNode(2)
-	root.Right = &Node{5, nil, nil}
-	root.Right.Left = CreateNode(4)
+	root.Left.Right = CreateTreeNode(2)
+	root.Right = &TreeNode{5, nil, nil}
+	root.Right.Left = CreateTreeNode(4)
 
 	fmt.Print("\n前序遍历: ")
 	root.PreOrder()
@@ -23,4 +23,7 @@ func TestCreateNode(t *testing.T) {
 	root.BreadthFirstSearch()
 	fmt.Println("\n层数: ", root.Layers())
 	fmt.Println("\n层数: ", root.LayersByQueue())
+
+	node := BuildTreeNode([]interface{}{6, 2, 8, 0, 4, 7, 9})
+	node.BreadthFirstSearch()
 }

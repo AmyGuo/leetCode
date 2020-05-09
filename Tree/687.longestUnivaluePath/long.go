@@ -44,28 +44,25 @@ func dfs(node *TreeNode, num *int) int {
 	if node == nil {
 		return 0
 	}
-
 	left := dfs(node.Left, num)
 	right := dfs(node.Right, num)
+
 	arrowLeft, arrowRight := 0, 0
 	if node.Left != nil && node.Left.Val == node.Val {
 		arrowLeft += left + 1
-	} else {
-		arrowLeft = 0
 	}
 	if node.Right != nil && node.Right.Val == node.Val {
 		arrowRight += right + 1
-	} else {
-		arrowRight = 0
 	}
 
-	if *num < arrowLeft+arrowRight {
+	if *num < arrowRight+arrowLeft {
 		*num = arrowRight + arrowLeft
 	}
 
-	if arrowLeft > arrowRight {
-		return arrowLeft
-	} else {
+	if arrowRight > arrowLeft {
 		return arrowRight
+	} else {
+		return arrowLeft
 	}
+
 }
