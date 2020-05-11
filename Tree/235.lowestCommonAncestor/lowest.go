@@ -39,10 +39,42 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+//递归：时间复杂度O(N) 空间复杂度O(N)
 func LowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	if root == nil {
-		return &TreeNode{}
+		return nil
 	}
 
-	return &TreeNode{}
+	parentVal := root.Val
+	pVal := p.Val
+	qVal := q.Val
+
+	if pVal > parentVal && qVal > parentVal {
+		return LowestCommonAncestor(root.Right, p, q)
+	} else if (pVal < parentVal) && qVal < parentVal {
+		return LowestCommonAncestor(root.Left, p, q)
+	} else {
+		return root
+	}
+}
+
+//迭代：时间复杂度O(N) 空间复杂度O(1)
+func LowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
+	if root == nil {
+		return nil
+	}
+	pVal := p.Val
+	qVal := q.Val
+	node := root
+	for node != nil {
+		parentVal := node.Val
+		if pVal > parentVal && qVal > parentVal {
+			node = node.Right
+		} else if pVal < parentVal && qVal < parentVal {
+			node = node.Left
+		} else {
+			return node
+		}
+	}
+	return nil
 }
