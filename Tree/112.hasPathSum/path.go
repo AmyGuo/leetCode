@@ -23,6 +23,49 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+//递归：
 func HasPathSum(root *TreeNode, sum int) bool {
+	if root == nil {
+		return false
+	}
 
+	sum -= root.Val
+	if root.Right == nil && root.Left == nil {
+		return sum == 0
+	}
+	return HasPathSum(root.Right, sum) || HasPathSum(root.Left, sum)
+}
+
+//迭代：
+func HasPathSum2(root *TreeNode, sum int) bool {
+	if root == nil {
+		return false
+	}
+	var nodeStack []*TreeNode
+	var sumStack []int
+
+	nodeStack = append(nodeStack, root)
+	sumStack = append(sumStack, sum)
+
+	for len(nodeStack) > 0 {
+		nodeTop := nodeStack[len(nodeStack)-1]
+		sumTop := sumStack[len(sumStack)-1]
+
+		nodeStack = nodeStack[:len(nodeStack)-1]
+		sumStack = sumStack[:len(sumStack)-1]
+
+		if nodeTop.Right == nil && nodeTop.Left == nil && sumTop == nodeTop.Val {
+			return true
+		}
+		if nodeTop.Right != nil {
+			nodeStack = append(nodeStack, nodeTop.Right)
+			sumStack = append(sumStack, sumTop-nodeTop.Val)
+		}
+
+		if nodeTop.Left != nil {
+			nodeStack = append(nodeStack, nodeTop.Left)
+			sumStack = append(sumStack, sumTop-nodeTop.Val)
+		}
+	}
+	return false
 }
