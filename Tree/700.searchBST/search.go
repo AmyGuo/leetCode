@@ -28,5 +28,26 @@ type TreeNode struct {
 }
 
 func SearchBST(root *TreeNode, val int) *TreeNode {
+	if root == nil {
+		return nil
+	}
 
+	if root.Val == val {
+		return root
+	} else if root.Val > val {
+		return SearchBST(root.Left, val)
+	} else {
+		return SearchBST(root.Right, val)
+	}
+}
+
+func SearchBST2(root *TreeNode, val int) *TreeNode {
+	for root != nil && root.Val != val {
+		if root.Val > val {
+			root = root.Left
+		} else {
+			root = root.Right
+		}
+	}
+	return root
 }
