@@ -41,8 +41,11 @@ git init
 >
 > 信息保存位置：` ~/.gitconfig 文件 `   
 
-https://gist.github.com/suziewong/4378434
+
+
 多账户使用时：
+
+```
 1.取消global
 git config --global --unset user.name
 git config --global --unset user.email
@@ -51,10 +54,17 @@ git config --global --unset user.email
 git config  user.email "xxxx@xx.com"
 git config  user.name "suzie"
 
+https://gist.github.com/suziewong/4378434
+```
+
+```
 删除分支（本地）
 git branch -d 分支名
 删除远端分支
 git push origin  --delete 分支名
+```
+
+
 
 ### 1.3基本操作
 
