@@ -51,6 +51,11 @@ git config --global --unset user.email
 git config  user.email "xxxx@xx.com"
 git config  user.name "suzie"
 
+删除分支（本地）
+git branch -d 分支名
+删除远端分支
+git push origin  --delete 分支名
+
 ### 1.3基本操作
 
 #### 1.3.1 状态查看
