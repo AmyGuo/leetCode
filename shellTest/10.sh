@@ -15,7 +15,7 @@
 #done
 
 #while
-i=1
+#i=1
 #while [ $i -le 254 ]
 #do
 #	ping -c 2 -i 0.3 -W 1 192.168.56.$i &> /dev/null
