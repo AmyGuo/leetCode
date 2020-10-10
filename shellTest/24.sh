@@ -12,3 +12,4 @@ do
 	fi
 done
 echo "总文件数量为：$sum"
+
