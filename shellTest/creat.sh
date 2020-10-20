@@ -8,7 +8,8 @@ touch $1
 # -e 的目的是为了让换行符\n生效
 echo -e "#!/bin/bash\n" > $1
 echo "# Description:" >> $1
+echo "# " >> $1
 chmod 744 $1
 
 # 使用vim打开文件，并将光标跳转到第三行
-vim +3 $1
+vim +4 $1
