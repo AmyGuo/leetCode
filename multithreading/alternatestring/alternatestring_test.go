@@ -34,7 +34,6 @@ type AS struct {
 }
 
 func (a *AS) fizz() {
-
 	for i := 3; i <= a.num; i += 3 {
 		if i%15 == 0 {
 			continue
@@ -43,6 +42,7 @@ func (a *AS) fizz() {
 		a.s = append(a.s, "fizz")
 		a.n <- struct{}{}
 	}
+	a.wg.Done()
 }
 
 func (a *AS) buzz() {
@@ -89,7 +89,7 @@ func (a *AS) number() {
 
 func AlternateString(n int) {
 	as := AS{start: make(chan struct{}), f: make(chan struct{}), b: make(chan struct{}), fb: make(chan struct{}, 1), n: make(chan struct{}), wg: &sync.WaitGroup{}, s: make([]interface{}, 0, n), num: n}
-	as.wg.Add(3)
+	as.wg.Add(4)
 	go as.fizz()
 	go as.buzz()
 	go as.fizzbuzz()

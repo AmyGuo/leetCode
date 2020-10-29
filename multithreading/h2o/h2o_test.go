@@ -43,31 +43,74 @@ import (
 //输入字符串中的 “O” 总数将会是 n 。
 
 type H2O struct {
-	wg     *sync.WaitGroup
-	origin string
+	wg    *sync.WaitGroup
+	hFlag chan struct{}
+	oFlag chan struct{}
+	hNum  int
+	oNum  int
 }
 
 //产生H
 func (h *H2O) hydrogen() {
-	fmt.Print("H")
+	for h.hNum > 0 {
+		fmt.Print("H")
+		h.hNum--
+		if h.hNum%2 == 0 {
+			<-h.oFlag
+			<-h.hFlag
+		}
+	}
+	h.wg.Done()
 }
 
 //产生O
 func (h *H2O) oxygen() {
-	fmt.Print("O")
+	for h.oNum > 0 {
+		h.oFlag <- struct{}{}
+		fmt.Print("O")
+		h.oNum--
+		h.hFlag <- struct{}{}
+	}
+
+	h.wg.Done()
 }
 
 //释放一个水分子
 func (h *H2O) h2oFree() {
-
+	h.wg.Add(2)
+	go h.hydrogen()
+	go h.oxygen()
+	h.wg.Wait()
 }
 
-func CreateH2O(str string) string {
+func newInstance(str string) *H2O {
+	h := new(H2O)
+	for _, v := range []byte(str) {
+		if string(v) == "H" {
+			h.hNum++
+		} else {
+			h.oNum++
+		}
+	}
 
-	return ""
+	h.hFlag = make(chan struct{})
+	h.oFlag = make(chan struct{})
+
+	h.wg = &sync.WaitGroup{}
+	return h
+}
+
+func CreateH2O(str string) {
+	if len(str)%3 != 0 || len(str) < 1 || len(str) > 50 {
+		return
+	}
+	h := newInstance(str)
+	h.h2oFree()
+	fmt.Println("done")
 }
 
 func Test_Create_H2O(t *testing.T) {
 	CreateH2O("HOH")
 	CreateH2O("OOHHHH")
+	CreateH2O("OOOHHHHHH")
 }
