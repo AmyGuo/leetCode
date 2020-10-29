@@ -10,6 +10,6 @@
 
 5. [输出水分子](https://github.com/AmyGuo/leetCode/blob/master/multithreading/h2o/h2o_test.go)
 
-6. [哲学家就餐]((https://github.com/AmyGuo/leetCode/blob/master/multithreading/meal/meal_test.go))
+6. [哲学家就餐](https://github.com/AmyGuo/leetCode/blob/master/multithreading/meal/meal_test.go)
    
 
