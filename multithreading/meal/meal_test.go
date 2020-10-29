@@ -106,3 +106,5 @@ func Test_Meal(t *testing.T) {
 
 	d.wg.Wait()
 }
+
+//参考链接：https://www.zhihu.com/column/c_1286635591711801344
