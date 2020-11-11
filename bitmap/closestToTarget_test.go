@@ -51,19 +51,12 @@ a&b的值不会大于a,也不会大于b，即按位与之和是随着l的减小�
 按位与之和最多只有20中不同的值
 */
 
-func abs(a int) int {
-	if a < 0 {
-		return -a
-	}
-	return a
-}
-
 // 分析:
 // 1. 两数相与，只会越来越小;  与得越多，就会越来越小；
 // 2. 无序数组 中和目标值与后，最接近目标值的数， 其向两端与更多的数，也会越来越小， 最终会离目标值越来越远；
-func closestToTarget(arr []int, target int) int {
+func closestToTarget1(arr []int, target int) int {
 
-	// 1. 找到最接近目标值的数
+	// 找到最接近目标值的数
 	midIndex := 0
 	mid := target
 	dist := abs(arr[0] - target)
@@ -124,6 +117,116 @@ func closestToTarget(arr []int, target int) int {
 		// fmt.Println("end:", i, ",dist:", dist)
 	}
 	return dist
+}
+
+//1. 将arr一分为二，结果将出现在左边、右边，或者中间；
+//2. 左右两边的比较容易处理，递归就可以了。中间的处理利用了按位与，结果不会增大的性质；
+//		如果中间两位的结果已经小于target了，那么不需要再继续向两边增加其他的数字，因为and更多的数字，只会得到更加小于target的数字；
+//		大于的target的时候，可以不断得向两边扩张，直到边界，或者会得到小于target的数字；
+//3. 返回3个中的最小值就可以了
+func closestToTarget2(arr []int, target int) int {
+
+	merge := func(l, m, r int) int {
+		ll, rr := m, m+1
+		y := arr[ll] & arr[rr]
+
+		if y < target {
+			// and more nums, get less, best is y
+			return target - y
+		}
+
+		for ll >= l || rr <= r {
+			if ll > l && y&arr[ll-1] >= target {
+				ll--
+				y &= arr[ll]
+				continue
+			}
+			if rr < r && y&arr[rr+1] >= target {
+				rr++
+				y &= arr[rr]
+				continue
+			}
+			break
+		}
+
+		d := y - target
+
+		if ll > l && abs(y&arr[ll-1]-target) < d {
+			d = abs(y&arr[ll-1] - target)
+		}
+		if rr < r && abs(y&arr[rr+1]-target) < d {
+			d = abs(y&arr[rr+1] - target)
+		}
+		return d
+	}
+
+	var dfs func(l, r int) int
+
+	dfs = func(l, r int) int {
+		if l == r {
+			return abs(arr[l] - target)
+		}
+		mid := (l + r) / 2
+		a := dfs(l, mid)
+		b := dfs(mid+1, r)
+		c := merge(l, mid, r)
+		return min3(a, b, c)
+	}
+
+	return dfs(0, len(arr)-1)
+}
+
+func abs(num int) int {
+	if num < 0 {
+		return -num
+	}
+	return num
+}
+
+func min(a, b int) int {
+	if a <= b {
+		return a
+	}
+	return b
+}
+
+func min3(a, b, c int) int {
+	if a <= b && a <= c {
+		return a
+	}
+	if b <= a && b <= c {
+		return b
+	}
+	return c
+}
+
+func closestToTarget(arr []int, target int) int {
+	ans := 10000005
+	preCalc(&arr)
+	l := len(arr)
+	for i := 0; i < l; i++ {
+		sum := arr[i]
+		for j := i; j < l; j++ {
+			sum &= arr[j]
+			ans = min(ans, abs(sum-target))
+			if sum <= target {
+				break
+			}
+		}
+	}
+	return ans
+}
+
+func preCalc(arr *[]int) {
+	index := 1
+	l := len(*arr)
+	for i := 1; i < l; i++ {
+		if (*arr)[i] != (*arr)[i-1] {
+			(*arr)[index] = (*arr)[i]
+			index++
+		}
+	}
+	*arr = (*arr)[:index]
 }
 
 func Example_closestToTarget() {
