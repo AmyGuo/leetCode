@@ -26,7 +26,7 @@ import (
 //]
 
 func subsets(nums []int) [][]int {
-
+	return nil
 }
 
 func Test_subsets(t *testing.T) {
