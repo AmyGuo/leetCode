@@ -22,7 +22,6 @@ func exchangeBits(num int) int {
 	odd := (num & 0xaaaaaaaa) >> 1
 	//取出偶位数：
 	even := (num & 0x55555555) << 1
-
 	return odd | even
 }
 
