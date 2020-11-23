@@ -48,7 +48,7 @@ func subsets(nums []int) [][]int {
 	length := uint(1 << uint(len(nums)))
 	for i := uint(0); i < length; i++ { //遍历从0到length中间的所有数字，根据数字中1的位置来找子集
 		list := make([]int, 0)
-		for j := uint(0); j < length; j++ {
+		for j := uint(0); j < length; j++ { //遍历该数字的每一位
 			if ((i >> j) & 1) == 1 { //如果数字i的某一个位置是1，就把数组中对应的数字添加到集合
 				list = append(list, nums[j])
 			}
@@ -58,6 +58,18 @@ func subsets(nums []int) [][]int {
 	return res
 }
 
+func subsets1(nums []int) [][]int {
+	if len(nums) == 0 {
+		return [][]int{{}}
+	}
+	result := subsets(nums[1:])
+	for _, v := range result {
+		result = append(result, append([]int{nums[0]}, v...))
+	}
+	return result
+}
+
 func Test_subsets(t *testing.T) {
 	fmt.Println(subsets([]int{1, 2, 3}))
+	fmt.Println(subsets1([]int{1, 2, 3}))
 }
