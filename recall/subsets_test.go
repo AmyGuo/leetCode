@@ -27,7 +27,7 @@ import (
 
 //回溯法
 
-func subsets1(nums []int) [][]int {
+func subsets(nums []int) [][]int {
 	res := [][]int{}
 	var dfs func(path []int, index int)
 
@@ -35,10 +35,13 @@ func subsets1(nums []int) [][]int {
 		temp := make([]int, len(path))
 		copy(temp, path)
 		res = append(res, temp)
+		fmt.Println("res:", res)
 		for i := index; i < len(nums); i++ {
 			path = append(path, nums[i])
+			fmt.Printf("path%+v,index:%d\n", path, i)
 			dfs(path, i+1)
 			path = path[:len(path)-1]
+			fmt.Println("path return:", path)
 		}
 	}
 
@@ -46,7 +49,7 @@ func subsets1(nums []int) [][]int {
 	return res
 }
 
-func subsets(nums []int) [][]int {
+func subsets1(nums []int) [][]int {
 	// 结果集
 	res := make([][]int, 0)
 	// 临时栈
