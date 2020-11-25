@@ -1,4 +1,4 @@
-package bitmap
+package recall
 
 import (
 	"fmt"
@@ -35,13 +35,13 @@ func subsets(nums []int) [][]int {
 		temp := make([]int, len(path))
 		copy(temp, path)
 		res = append(res, temp)
-		fmt.Println("res:", res)
+		//fmt.Println("res:", res)
 		for i := index; i < len(nums); i++ {
 			path = append(path, nums[i])
-			fmt.Printf("path%+v,index:%d\n", path, i)
+			//fmt.Printf("path%+v,index:%d\n", path, i)
 			dfs(path, i+1)
 			path = path[:len(path)-1]
-			fmt.Println("path return:", path)
+			//fmt.Println("path return:", path)
 		}
 	}
 
