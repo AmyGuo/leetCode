@@ -42,41 +42,32 @@ candidate 中的每个元素都是独一无二的。
 1 <= target <= 500
 */
 
-func combinationSum(candidates []int, target int) [][]int {
-	if len(candidates) == 0 {
-		return [][]int{}
-	}
-
-	res := make([][]int, 0)
-	temp := target
-
-	var backTrack func(index, temp int, pth []int)
-	backTrack = func(index, temp int, pth []int) {
-		if index == len(candidates) {
+func combinationSum(candidates []int, target int) (ans [][]int) {
+	comb := []int{}
+	var dfs func(target, idx int)
+	dfs = func(target, idx int) {
+		if idx == len(candidates) {
 			return
 		}
-
-		if temp == 0 {
-			res = append(res, pth)
-			pth = []int{}
+		if target == 0 {
+			ans = append(ans, append([]int(nil), comb...))
 			return
 		}
-
-		backTrack(index+1, temp, pth)
-
-		if temp-candidates[index] >= 0 {
-			pth = append(pth, candidates[index])
-			backTrack(index, temp-candidates[index], pth)
-			pth = pth[:len(pth)-1]
+		// 直接跳过
+		dfs(target, idx+1)
+		// 选择当前数
+		if target-candidates[idx] >= 0 {
+			comb = append(comb, candidates[idx])
+			dfs(target-candidates[idx], idx)
+			comb = comb[:len(comb)-1]
 		}
 	}
-
-	backTrack(0, temp, []int{})
-
-	return res
+	dfs(target, 0)
+	return
 }
 
 func Test_combinationSum(t *testing.T) {
 	fmt.Println(combinationSum([]int{2, 3, 5}, 8))
 	fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
+	//fmt.Println(combinationSum([]int{2, 7, 6, 3, 5, 1}, 9))
 }
