@@ -1,5 +1,7 @@
 package greedy
 
+import "fmt"
+
 /*
 944. 删列造序
 给定由 N 个小写字母字符串组成的数组 A，其中每个字符串长度相等。
@@ -41,5 +43,28 @@ package greedy
 */
 
 func minDeletionSize(A []string) int {
+	if len(A) == 0 {
+		return 0
+	}
 
+	res := 0
+	for i := 0; i < len(A[0]); i++ {
+		for j := 0; j < len(A)-1; j++ {
+			if A[j][i] > A[j+1][i] {
+				res++
+				break
+			}
+		}
+	}
+	return res
+}
+
+func ExampleMinDeletionSize() {
+	fmt.Println(minDeletionSize([]string{"cba", "daf", "ghi"}))
+	fmt.Println(minDeletionSize([]string{"a", "b"}))
+	fmt.Println(minDeletionSize([]string{"zyx", "wvu", "tsr"}))
+	//Output:
+	//1
+	//0
+	//3
 }
