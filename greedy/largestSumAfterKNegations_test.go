@@ -38,15 +38,18 @@ func ExampleLargestSumAfterKNegations() {
 	fmt.Println(largestSumAfterKNegations([]int{3, -1, 0, 2}, 3))
 	fmt.Println(largestSumAfterKNegations([]int{2, -3, -1, 5, -4}, 2))
 	fmt.Println(largestSumAfterKNegations([]int{1, 2, 3, 4, 5}, 1))
+	fmt.Println(largestSumAfterKNegations([]int{-2, 9, 9, 8, 4}, 5))
+	fmt.Println(largestSumAfterKNegations([]int{-8, 3, -5, -3, -5, -2}, 6))
 	//Output:
 	//5
 	//6
 	//13
 	//13
+	//32
+	//22
 }
 
 func largestSumAfterKNegations(A []int, K int) int {
-
 	var s = [201]int{}
 	sum := 0
 	for _, value := range A {
@@ -63,19 +66,18 @@ func largestSumAfterKNegations(A []int, K int) int {
 					sum = sum - (key-100)*K + (key-100)*(value-K)
 					K = 0
 				}
-			} else if K > 0 && key >= 100 { //todo:还没有看懂
-				fmt.Println(key, K, K&1)
-				if K&1 == 0 { //奇数
+			} else if K > 0 && key >= 100 { //后面都是正数了
+				if K&1 == 0 { //K为偶数， 则说明符号加在任何正数上面都可抵消，所以直接全部累加即可
 					sum += (key - 100) * value
-				} else {
-					if -(temp - 100) < key-100 {
+				} else { // K为奇数
+					if -(temp - 100) < key-100 { //当前数的前一个是负数，那就把前面的数的符号再变一次，再加上当前的数
 						sum = sum + (temp-100)*2 + (key-100)*value
-					} else {
+					} else { //前后都是正数，则给当前的数的符号变换一次
 						sum = sum - (key-100)*1 + (key-100)*(value-1)
 					}
 				}
 				K = 0
-			} else {
+			} else { //k=0,则进行累加
 				sum += (key - 100) * value
 			}
 			temp = key
