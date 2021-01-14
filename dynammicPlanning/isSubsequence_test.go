@@ -41,7 +41,6 @@ func isSubsequence(s string, t string) bool {
 	for i := 0; i < 26; i++ {
 		f[m][i] = m
 	}
-	fmt.Println(f)
 	for i := m - 1; i >= 0; i-- {
 		for j := 0; j < 26; j++ {
 			if t[i] == byte(j+'a') {
@@ -51,7 +50,6 @@ func isSubsequence(s string, t string) bool {
 			}
 		}
 	}
-	fmt.Println(f)
 	add := 0
 	for i := 0; i < n; i++ {
 		if f[add][int(s[i]-'a')] == m {
@@ -62,10 +60,53 @@ func isSubsequence(s string, t string) bool {
 	return true
 }
 
+func isSubsequence2(s string, t string) bool {
+	m, n := len(s), len(t)
+	i, j := 0, 0
+
+	for i < m && j < n {
+		if s[i] == t[j] {
+			i++
+		}
+		j++
+	}
+	return m == i
+}
+
+/*
+class Solution {
+   public boolean isSubsequence(String s, String t) {
+        int sLen = s.length(), tLen = t.length();
+        if (sLen > tLen) return false;
+        if (sLen == 0) return true;
+        boolean[][] dp = new boolean[sLen + 1][tLen + 1];
+        for (int j = 0; j <= tLen; j++) {
+            dp[0][j] = true;
+        }
+
+        for (int i = 1; i <= sLen; i++) {
+            for (int j = 1; j <= tLen; j++) {
+                if (s.charAt(i - 1) == t.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = dp[i][j - 1];
+                }
+            }
+        }
+        return dp[sLen][tLen];
+    }
+}
+
+*/
+
 func ExampleIsSubsequence() {
 	fmt.Println(isSubsequence("abc", "ahbgdc"))
+	fmt.Println(isSubsequence2("abc", "ahbgdc"))
 	fmt.Println(isSubsequence("axc", "ahbgdc"))
+	fmt.Println(isSubsequence2("axc", "ahbgdc"))
 	//Output:
 	//true
+	//true
+	//false
 	//false
 }
