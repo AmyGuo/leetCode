@@ -1,4 +1,4 @@
-package dynammicPlanning
+package dynamicPlanning
 
 import (
 	"fmt"
