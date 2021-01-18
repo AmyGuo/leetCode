@@ -42,12 +42,33 @@ func searchInsert(nums []int, target int) int {
 	return ans
 }
 
+func searchInsert2(nums []int, target int) int {
+	left, right := 0, len(nums)
+	for left < right {
+		mid := (left + right) >> 1
+		if target <= nums[mid] {
+			right = mid
+		} else {
+			left = mid + 1
+		}
+	}
+	return right
+}
+
 func ExampleSearchInsert() {
 	fmt.Println(searchInsert([]int{1, 3, 5, 6}, 5))
 	fmt.Println(searchInsert([]int{1, 3, 5, 6}, 2))
 	fmt.Println(searchInsert([]int{1, 3, 5, 6}, 7))
 	fmt.Println(searchInsert([]int{1, 3, 5, 6}, 0))
+	fmt.Println(searchInsert2([]int{1, 3, 5, 6}, 5))
+	fmt.Println(searchInsert2([]int{1, 3, 5, 6}, 2))
+	fmt.Println(searchInsert2([]int{1, 3, 5, 6}, 7))
+	fmt.Println(searchInsert2([]int{1, 3, 5, 6}, 0))
 	//Output:
+	//2
+	//1
+	//4
+	//0
 	//2
 	//1
 	//4
