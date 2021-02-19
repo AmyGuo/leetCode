@@ -52,7 +52,32 @@ letters 仅由小写字母组成，最少包含两个不同的字母。
 */
 
 func nextGreatestLetter(letters []byte, target byte) byte {
+	left, right := 0, len(letters)-1
+	ans := letters[left]
+	for left < right {
+		mid := (right-left)>>1 + left
+		if letters[mid] <= target {
+			left = mid + 1
+			ans = letters[mid+1]
+		} else {
+			right = mid
+		}
+	}
+	if ans > target {
+		return ans
+	}
+	return letters[0]
+}
 
+func nextGreatestLetter2(letters []byte, target byte) byte {
+	res := letters[0]
+	for i := 0; i < len(letters); i++ {
+		if letters[i] > target {
+			res = letters[i]
+			break
+		}
+	}
+	return res
 }
 
 func ExampleNextGreatestLetter() {
