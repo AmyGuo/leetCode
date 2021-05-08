@@ -22,3 +22,14 @@ func TwoSum(nums []int, target int) []int {
 	}
 	return []int{0, 0}
 }
+
+func TwoSum2(nums []int,target int)[]int  {
+	dict := make(map[int]int)
+	for i,num := range nums {
+		if ret,ok := dict[target-num];ok {
+			return []int{ret,i}
+		}
+		dict[num] = i
+	}
+	return nil
+}
