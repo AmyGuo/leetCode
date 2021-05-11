@@ -55,3 +55,16 @@ func reverseWords(s string) string {
 	}
 	return string(res)
 }
+
+//reverseWords("Let's go to the party!")
+//!ytrap eht ot og s'teL
+func reverseWords3(s string) string {
+	b := []byte(s)
+	left, right := 0, len(b)-1
+	for left < right {
+		b[left], b[right] = b[right], b[left]
+		left++
+		right--
+	}
+	return string(b)
+}
