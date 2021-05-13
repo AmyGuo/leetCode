@@ -68,3 +68,34 @@ func reverseWords3(s string) string {
 	}
 	return string(b)
 }
+
+// I am a student
+//student a an I
+// 先整个句子翻转，然后再翻转每个单词
+func reverseWords4(s string) string {
+	b := []byte(s)
+	left, right := 0, len(b)-1
+	for left < right {
+		b[left], b[right] = b[right], b[left]
+		left++
+		right--
+	}
+
+	for i := 0; i < len(b); {
+		start := i
+		for i < len(b) && b[i] != ' ' {
+			i++
+		}
+		left, right := start, i-1
+		for left < right {
+			b[left], b[right] = b[right], b[left]
+			left++
+			right--
+		}
+
+		for i < len(b) && b[i] == ' ' {
+			i++
+		}
+	}
+	return string(b)
+}
