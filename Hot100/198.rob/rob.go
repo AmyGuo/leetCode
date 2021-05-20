@@ -58,9 +58,34 @@ func Rob2(nums []int) int {
 		} else {
 			cur, pre = cur, cur
 		}
-		//cur,pre = math.Max(pre+v,cur),cur
+		//cur, pre = math.Max(pre+v, cur), cur
 	}
 	return cur
+}
+
+func Rob3(nums []int) int {
+	if len(nums) == 0 {
+		return 0
+	}
+	if len(nums) == 1 {
+		return nums[0]
+	}
+
+	dp := make([]int, len(nums))
+	dp[0] = nums[0]
+	dp[1] = max(nums[0], nums[1])
+	for i := 2; i < len(nums); i++ {
+		dp[i] = max(dp[i-1], dp[i-2]+nums[i])
+	}
+	return dp[len(nums)-1]
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	} else {
+		return b
+	}
 }
 
 //状态定义：
@@ -68,7 +93,7 @@ func Rob2(nums []int) int {
 //设动态规划列表 dp ，dp[i] 代表前 i 个房子在满足条件下的能偷窃到的最高金额。
 //转移方程：
 //
-//设： 有 n 个房子，前 nn 间能偷窃到的最高金额是 dp[n] ，前 n-1 间能偷窃到的最高金额是dp[n−1] ，此时向这些房子后加一间房，此房间价值为 num ；
+//设： 有 n 个房子，前 n 间能偷窃到的最高金额是 dp[n] ，前 n-1 间能偷窃到的最高金额是dp[n−1] ，此时向这些房子后加一间房，此房间价值为 num ；
 //
 //加一间房间后： 由于不能抢相邻的房子，意味着抢第 n+1 间就不能抢第 n 间；那么前n+1 间房能偷取到的最高金额]dp[n+1] 一定是以下两种情况的 较大值 ：
 //

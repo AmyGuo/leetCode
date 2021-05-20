@@ -37,7 +37,6 @@ func twoSum(numbers []int, target int) []int {
 		}
 	}
 	return []int{-1, -1}
-
 }
 
 func ExampleTwoSum() {

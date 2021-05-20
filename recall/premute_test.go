@@ -38,5 +38,26 @@ func premute(nums []int) [][]int {
 
 func TestPremute(t *testing.T) {
 	fmt.Println(premute([]int{1, 2, 3}))
+	//fmt.Println(premute2([]int{1, 2, 3}))
 	//[[1 2 3] [1 3 2] [2 1 3] [2 3 1] [3 1 2] [3 2 1]]
+}
+
+func premute2(nums []int) [][]int {
+	res := make([][]int, 0)
+	var backtracing func(nums []int, index int, res [][]int)
+	backtracing = func(nums []int, index int, res [][]int) {
+		if index == len(nums)-1 {
+			res = append(res, nums)
+			return
+		}
+
+		for i := index; i < len(nums); i++ {
+			nums[i], nums[index] = nums[index], nums[i]
+			backtracing(nums, index+1, res)
+			nums[i], nums[index] = nums[index], nums[i]
+
+		}
+	}
+	backtracing(nums, 0, res)
+	return res
 }
