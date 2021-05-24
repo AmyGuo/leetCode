@@ -1,6 +1,9 @@
 package tencent
 
-import "math"
+import (
+	"math"
+	"strings"
+)
 
 type ListNode struct {
 	Val  int
@@ -75,7 +78,7 @@ func longestPalindrome(s string) string {
 func reverse(x int) int {
 	ans := 0
 	for x != 0 {
-		if ans < math.MinInt32/10 || ans > math.MinInt32/10 {
+		if ans < math.MinInt32/10 || ans > math.MaxInt32/10 { //判断乘10时候会溢出，就把该数和最大数除10做比较
 			return 0
 		}
 		dig := x % 10
@@ -83,4 +86,92 @@ func reverse(x int) int {
 		ans = ans*10 + dig
 	}
 	return ans
+}
+
+//5. 字符串转换整数 (atoi)
+func myAtoi(s string) int {
+	return convert(cleanString(s))
+}
+
+func cleanString(s string) (sign int, abs string) {
+	//1. 去除首尾的空格
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return
+	}
+
+	//2. 判断第一个字符是 符号，数字，其他
+	switch s[0] {
+	case '0', '1', '2', '3', '4', '5', '6', '7', '8', '9':
+		sign, abs = 1, s
+	case '+':
+		sign, abs = 1, s[1:]
+	case '-':
+		sign, abs = -1, s[1:]
+	default:
+		return
+	}
+
+	//3. 去除数字+字母模式下的字母
+	for i, v := range abs {
+		if v < '0' || v > '9' {
+			abs = abs[:i]
+			break
+		}
+	}
+	return
+}
+
+func convert(sign int, abs string) int {
+	res := 0
+	for _, v := range abs {
+		res = res*10 + int(v-'0')
+		switch {
+		case sign == 1 && res > math.MaxInt32:
+			return math.MaxInt32
+		case sign == -1 && sign*res < math.MinInt32:
+			return math.MinInt32
+		}
+	}
+	return sign * res
+}
+
+func myAtoi2(s string) int {
+	//1. 去除空格
+	s = strings.TrimSpace(s)
+	if s == "" {
+		return 0
+	}
+
+	//2. 第一位校验
+	sign, abs := 0, ""
+	switch {
+	case s[0] == '+':
+		sign, abs = 1, s[1:]
+	case s[0] == '-':
+		sign, abs = -1, s[1:]
+	case s[0] >= '0' && s[0] <= '9':
+		sign, abs = 1, s
+	}
+
+	//3. 去除数字之后的字母
+	for i, v := range abs {
+		if v > '9' || v < '0' {
+			abs = abs[:i]
+			break
+		}
+	}
+
+	//4. 字符串转数字，并判断溢出
+	res := 0
+	for _, v := range abs {
+		res = res*10 + int(v-'0')
+		switch {
+		case sign == 1 && res > math.MaxInt32:
+			return math.MaxInt32
+		case sign == -1 && res*sign < math.MinInt32:
+			return math.MinInt32
+		}
+	}
+	return res * sign
 }
