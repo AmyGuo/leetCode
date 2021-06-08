@@ -13,7 +13,9 @@ func TestReverse(t *testing.T) {
 	//-2147483648
 
 	//fmt.Println(reverseWords("Let's take LeetCode contest"))
-	s := []byte{'H', 'E', 'L', 'L', 'O'}
-	reverseString(s)
-	fmt.Println(string(s))
+	//s := []byte{'H', 'E', 'L', 'L', 'O'}
+	//reverseString(s)
+	//fmt.Println(string(s))
+
+	fmt.Println(productExceptSelf2([]int{1, 2, 3, 4}))
 }
